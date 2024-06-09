@@ -1,6 +1,18 @@
+replicaCount: 2
 image:
-  repository: nthhaf/hant-api-service
-  tag: latest
-
+  repository: nthhaf/hant-api-service 
+  tag: "v1.0.0"
 service:
-  nodePort: 30081
+  type: NodePort
+  port: 80
+  nodePort: 30002
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+nodeSelector: {}
+tolerations: []
+affinity: {}
