@@ -1,9 +1,10 @@
-replicaCount: 2
+replicaCount: 1
 
 image:
   repository: nthhaf/hant-api-service
   pullPolicy: IfNotPresent
-  tag: latest
+  tag: "TAG_NAME_PLACEHOLDER"  
 
 service:
   nodePort: 30002
+
